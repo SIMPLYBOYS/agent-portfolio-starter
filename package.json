@@ -1,0 +1,13 @@
+{
+  "name": "agent-portfolio-starter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An exhibition-inspired portfolio for Web3 and AI engineering.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/project-media.js && node --check public/content.js && node --check public/cinema.js && node --check public/ukiyoe.js && node --check public/films.js && node --check public/film-queue.js && node --test film-queue.test.mjs"
+  },
+  "engines": { "node": ">=22.9" }
+}

@@ -1,0 +1,166 @@
+/* Cinematic edition. Shared cards and dialogs are in styles.css. */
+:root { --bg: #171410; --paper: #f0e7d3; --muted: #b7ac99; --gold: #c9a974; }
+body { background: var(--bg); }
+.site-header { height: 100px; border-color: #f0e7d31a; }
+.site-header .brand span { letter-spacing: 1.6px; }
+.site-header nav { font-size: 13px; }
+.motion-toggle { width: 42px; height: 42px; }
+.motion-toggle:disabled { cursor: default; opacity: .65; }
+.cinema.hero {
+  display: flex; align-items: center; height: 100svh; min-height: 780px;
+  max-height: 1200px; padding: 150px 7% 150px; background: #121210; isolation: isolate;
+}
+.cinema-stage { position: absolute; inset: 80px 0 60px 18%; z-index: -3; }
+.cinema-stage img, .cinema #intro-video {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: contain; opacity: 1; z-index: auto;
+}
+.cinema-stage img { filter: brightness(.82); }
+.cinema #intro-video { filter: brightness(.82); transition: opacity .8s; }
+.cinema-shade {
+  position: absolute; inset: 0; z-index: -2; pointer-events: none;
+  background: linear-gradient(90deg, #15100efa 0%, #15100ee8 21%, #15100e9c 38%, transparent 67%),
+    linear-gradient(0deg, #13110ffa, transparent 24%, transparent 78%, #13110fe6);
+}
+.curtain { position: absolute; top: 0; bottom: 0; pointer-events: none; z-index: -1; }
+.curtain-left {
+  left: -3%; width: 22%; opacity: .35;
+  background: repeating-linear-gradient(95deg, #160809 0%, #4b2020 13%, #291011 20%, #0b0808 27%);
+  mask-image: linear-gradient(90deg, black 20%, transparent);
+}
+.curtain-right {
+  right: -2%; width: 8%; opacity: .6;
+  background: repeating-linear-gradient(86deg, #160809 0%, #492120 18%, #160c0c 35%);
+  mask-image: linear-gradient(270deg, black, transparent);
+}
+.cinema .hero-copy { width: 570px; max-width: 60%; }
+.cinema .eyebrow { font-size: 9px; letter-spacing: 2px; margin-bottom: 35px; }
+.cinema .eyebrow span { display: block; margin-top: 10px; font-size: 9px; letter-spacing: 5px; color: #c7baa6; }
+.cinema h1 {
+  font: 400 clamp(70px, 7.8vw, 122px)/1.19 'Songti TC', 'Noto Serif TC', 'PMingLiU', serif;
+  letter-spacing: 9px; margin: 0 0 22px; text-shadow: 0 3px 35px #0007;
+}
+.cinema h1 span { margin-left: 1.05em; color: #d7bd91; }
+.hero-english { font: 23px/1.3 Georgia, serif; letter-spacing: .1px; margin: 20px 0; }
+.hero-english em { color: var(--gold); }
+.cinema .hero-description { font-size: 12px; line-height: 2; color: #d0c5b3; }
+.cinema .hero-actions { margin-top: 28px; gap: 24px; flex-wrap: wrap; }
+.quiet-link { color: #dbccb8; }
+.film-caption {
+  position: absolute; bottom: 106px; right: 7%; display: flex; gap: 14px;
+  align-items: center; flex-wrap: wrap; max-width: 52%; font-size: 10px; color: #dbd0b9;
+  background: #171410cc; border: 1px solid #e5d8b31f; padding: 10px 14px;
+}
+.film-index { font-size: 8px; letter-spacing: 1.5px; color: var(--gold); }
+.film-caption a { border-bottom: 1px solid #c9a97460; }
+#film-status { color: #b2a794; font-size: 9px; }
+.cinema .hero-bottom { bottom: 30px; }
+.collection-intro { background: #e7ddc7; color: #342f26; padding-top: 75px; padding-bottom: 55px; }
+.collection-intro .eyebrow { color: #8b6045; }
+.collection-intro>div:first-of-type { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.collection-intro h2 { font: 36px/1.65 'Songti TC', 'PMingLiU', serif; letter-spacing: 3px; }
+.collection-intro h2 em { color: #925c43; font-style: normal; }
+.collection-intro p:not(.eyebrow) { font-size: 13px; line-height: 2.2; color: #665a48; }
+.collection-strip { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid #76695340; margin-top: 40px; padding-top: 25px; }
+.collection-strip button { text-align: left; font: 16px 'Songti TC', serif; padding: 10px 16px; border-right: 1px solid #76695340; }
+.collection-strip button:first-child { padding-left: 0; }
+.collection-strip button:last-child { border: 0; }
+.collection-strip span { font-size: 11px; color: #976343; float: right; }
+.works { padding-top: 90px; }
+.project-grid { row-gap: 58px; }
+.project-art.print { background: #28251d; display: flex; align-items: center; justify-content: center; padding: 28px 22px 42px; }
+.project-art.print img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 10px 12px #0005); }
+.project-art.print .art-number { left: 12px; top: 9px; font-size: 15px; color: #e6d4b4; }
+.project-art.print .art-category { bottom: 13px; font-size: 7px; letter-spacing: 1.6px; color: #c4b295; }
+.project-card h3 { font-family: 'Songti TC', 'PMingLiU', Georgia, serif; font-size: 28px; line-height: 1.45; }
+.card-status { display: block; margin-top: 14px; font-size: 10px; color: #a89a81; }
+.project-art.pixel-office { background: #151921; padding: 30px 0; }
+.project-art.pixel-office img, .project-art.pixel-office .project-preview {
+  position: absolute; inset: 30px 0; width: 100%; height: calc(100% - 60px); object-fit: contain;
+}
+.project-art.pixel-office .art-number { z-index: 1; top: 7px; left: 12px; font-size: 15px; }
+.project-art.pixel-office .art-category { z-index: 1; bottom: 8px; font-size: 8px; letter-spacing: 1px; }
+.project-art.cogito-agent { background: #14110f; }
+.project-art.cogito-agent img, .project-art.cogito-agent .project-preview {
+  position: absolute; inset: 30px 0; width: 100%; height: calc(100% - 60px); object-fit: contain;
+}
+.project-art.cogito-agent .art-number { z-index: 1; top: 7px; left: 12px; font-size: 15px; }
+.project-art.cogito-agent .art-category { z-index: 1; bottom: 8px; font-size: 8px; letter-spacing: 1px; }
+#project-gallery { margin-top: 28px; padding-top: 8px; border-top: 1px solid var(--line); }
+#gallery-note { color: var(--muted); }
+#gallery-image { display: block; width: 100%; height: 400px; object-fit: contain; background: #15130f; }
+.gallery-fullsize { display: block; }
+.gallery-fullsize span { display: block; font-size: 11px; color: var(--gold); text-decoration: underline; margin-top: 8px; }
+@media (max-width: 720px) { #gallery-image { height: 300px; } }
+#project-media { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+#project-dialog .dialog-close { position: sticky; top: 12px; float: right; z-index: 3; background: #252118; border: 1px solid var(--line); }
+.media-choices { display: flex; flex-wrap: wrap; gap: 10px; }
+.media-choices button { padding: 8px 12px; border: 1px solid var(--line); font-size: 12px; }
+.media-choices button[aria-pressed="true"] { background: #c9a97421; border-color: var(--gold); }
+#project-media-note { color: var(--muted); }
+#project-video { display: block; width: 100%; max-height: 56svh; background: #111; margin: 14px 0; }
+.media-error { color: var(--gold); }
+.about { background: #24211a; }
+.about-art { background: radial-gradient(ellipse at 30% 20%, #726044, #322a1e); }
+.about-art:before { border-color: #c7ae7240; }
+.monogram { color: #d5bc8a; text-shadow: 12px 18px #15110855; }
+.contact { background: radial-gradient(ellipse at 50% 80%, #4b3527, #292019 45%, #201a15 85%); }
+dialog { background: #252118; border-color: #77664e; }
+#dialog-image { width: 100%; height: 240px; object-fit: contain; background: #15130f; margin: 20px 0 0; }
+#film-dialog { width: min(1100px, calc(100% - 28px)); }
+#film-dialog .dialog-shell { padding: 40px; }
+#film-dialog h2 { font: 32px 'Songti TC', serif; }
+#full-film { display: block; width: 100%; max-height: 57svh; margin-top: 20px; background: #080808; }
+.credits-link { font-size: 11px; color: var(--muted); border-bottom: 1px solid var(--line); }
+.credits-page { max-width: 900px; margin: auto; padding: 65px 24px; }
+.credits-page h1 { font: 44px 'Songti TC', serif; }
+.credits-page h2 { font: 25px 'Songti TC', serif; margin-top: 45px; }
+.credits-page p, .credits-page li { color: var(--muted); font-size: 14px; }
+.credits-page a { color: var(--gold); text-decoration: underline; }
+.credits-page code { overflow-wrap: anywhere; }
+@media (max-width: 1000px) {
+  .cinema .hero-copy { max-width: 65%; }
+  .cinema h1 { font-size: 85px; }
+  .cinema-stage { left: 15%; }
+  .film-caption { bottom: 92px; right: 5%; gap: 10px; }
+  .collection-intro h2 { font-size: 30px; }
+}
+@media (max-width: 720px) {
+  .site-header { height: 80px; }
+  .site-header .brand span { font-size: 5.5px; letter-spacing: .8px; }
+  .motion-toggle { width: 34px; height: 34px; }
+  .cinema.hero { min-height: 920px; height: auto; padding: 120px 7% 135px; align-items: flex-start; }
+  .cinema-stage { inset: 260px 0 auto 0; height: 300px; }
+  .cinema-stage img, .cinema #intro-video { filter: brightness(.9); }
+  .cinema-shade { background: linear-gradient(0deg, #15110f 0%, #15110f 33%, transparent 46%, transparent 68%, #15110f 83%); }
+  .curtain-left { width: 13%; }
+  .curtain-right { width: 8%; }
+  .cinema .hero-copy { width: 100%; max-width: none; }
+  .cinema .eyebrow { margin-bottom: 18px; font-size: 8px; }
+  .cinema .eyebrow span { display: none; }
+  .cinema h1 { font-size: clamp(40px, 10.4vw, 60px); line-height: 1.2; letter-spacing: 5px; margin-bottom: 365px; white-space: nowrap; }
+  .cinema h1 br { display: none; }
+  .cinema h1 span { margin-left: 0; }
+  .hero-english { font-size: 25px; margin-top: 0; }
+  .hero-english br { display: none; }
+  .hero-english em { display: block; }
+  .cinema .hero-description { font-size: 12px; }
+  .cinema .hero-actions { gap: 24px; }
+  .film-caption { left: 7%; right: auto; bottom: 73px; padding: 8px; flex-wrap: wrap; font-size: 9px; gap: 8px; max-width: 86%; }
+  .film-index { font-size: 7px; }
+  #film-status { font-size: 8px; }
+  .collection-intro>div:first-of-type { display: block; }
+  .collection-intro h2 { font-size: 28px; }
+  .collection-intro>div>p { margin-top: 22px; }
+  .collection-strip { margin-top: 25px; }
+  .collection-strip button { font-size: 12px; padding: 8px; }
+  .collection-strip span { display: block; float: none; margin-top: 10px; }
+  .collection-toolbar { align-items: flex-end; }
+  .filters { gap: 0 16px; }
+  #work-count { margin-bottom: 14px; }
+  .project-art.print { aspect-ratio: 1.28; }
+  .project-card h3 { font-size: 29px; }
+  #film-dialog .dialog-shell { padding: 45px 18px 24px; }
+  .credits-link { font-size: 10px; }
+  #dialog-image { height: 180px; }
+}
