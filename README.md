@@ -118,4 +118,4 @@ npm run check
 
 ## 授權
 
-程式碼採 [MIT](LICENSE)。`public/assets/` 底下的影像、影片、錄影與截圖不在 MIT 範圍內，各自的來源與條款見 `public/credits.html`。
+程式碼採 [MIT](LICENSE)。`public/assets/` 底下的影像、影片、錄影與截圖不在 MIT 範圍內，範圍說明見 [ASSETS.md](ASSETS.md)，各自的來源與條款見 `public/credits.html`。
