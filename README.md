@@ -1,5 +1,7 @@
 # Agent Portfolio Starter
 
+**線上版**：<https://agent-portfolio-starter.ferrari828.workers.dev/>
+
 Aaron 的「浮世・造境」作品集：浮世繪探索遊戲，以及 Web3 × AI Agent 工程作品。參考 [Kaori 的作品集](https://portfolio.kaori-dododo.com/) 的影片式入口，改為墨色、暖金與朱紅的電影感構圖；沒有複製對方的人物、影片或圖片。
 
 2026-09-25 改版：首頁以清親專案既有的〈今戸夏月〉AI 重繪影片取代 CSS 像素辦公室。這是實際 MP4 影片，不是即時 3D 場景，也沒有引入 WebGL。原畫封面與來源記錄納入本站，但未複製完整遊戲或更動五個來源專案。
