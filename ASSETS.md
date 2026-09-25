@@ -1,6 +1,6 @@
 # Asset licensing
 
-This license covers the source code in this repository only.
+The MIT license in [LICENSE](LICENSE) covers the source code in this repository only.
 
 It does NOT cover anything under `public/assets/` (images, videos, posters,
 screen recordings, screenshots). Those files keep their own sources and
