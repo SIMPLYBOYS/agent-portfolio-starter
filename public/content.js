@@ -101,7 +101,7 @@ export const projects = [
     tags: ['Architecture', 'Identity', 'Trade-offs'],
     question: '哪些設計已有公開先例，哪些問題仍需要實作來回答？',
     approach: '整理 x402、AP2、ZK spending policy 與 gateway 架構的學習筆記，轉成可公開的案例文章。',
-    evidence: '此卡是文章入口範本。公開前請校對來源、日期與技術結論，避免直接暴露私人 vault。',
+    evidence: '文章尚未公開。目前是個人研究筆記，來源、日期與技術結論逐條校對後，才會整理成文章連到這裡。',
     decisions: ['比較既有設計，說清楚自己的實作範圍。', '以測試和交易證據支持結論。'],
     demo: '', repo: '', caseStudy: '',
   },
