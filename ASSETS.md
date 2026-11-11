@@ -11,3 +11,6 @@ terms, listed in `public/credits.html`. In particular:
 - Pixel Office recordings and screenshots show LimeZu artwork and are for
   showcasing that project only.
 - `public/assets/cogito-agent/LICENSE` carries that project's own MIT license.
+- Agent Payment Authority's demo videos show LimeZu artwork and a screen
+  recording of Didit's sandbox verification page, and are for showcasing
+  that project only.
