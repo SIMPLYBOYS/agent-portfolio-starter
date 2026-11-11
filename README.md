@@ -57,7 +57,7 @@ GitHub、公開履歷與 Cake 個人頁已設定；`profile.email`、`linkedin` 
 
 2026-09-25 依 [Aaron Chou 的精簡履歷](https://simplyboys.github.io/resume/) 更新姓名、專業定位、17 年以上經驗、FIO／ewe technology／Coolbitx 精選經歷、可展開的早期經歷、技能與學歷。數據沿用本人公開履歷，不是本站獨立驗證的效能基準；4–6 小時至 10 分鐘內指 FIO 碳專案報告流程，沒有擴張為所有 AI 工作的成效。
 
-cogito-agent 最初依履歷整理，後續已用公開 README、安全模型與展示素材更新（見下方）；immerse 仍依履歷整理，GitHub 入口核對本機專案的 origin。本次未重新審查其程式碼。immerse 保留「個人單人使用」，Agent Payment Authority 保留設計／開發中，沒有把個人實驗或 POC 寫成企業正式上線。未複製企業內部素材，也未將未列在履歷中的 Email／LinkedIn 補成猜測值。
+cogito-agent 最初依履歷整理，後續已用公開 README、安全模型與展示素材更新（見下方）；immerse 仍依履歷整理，GitHub 入口核對本機專案的 origin。本次未重新審查其程式碼。immerse 保留「個人單人使用」，Agent Payment Authority 依其 repo 的現況更新（2026-11：可執行的展示，測試網實跑過三個場域；限制照該專案的 `docs/architecture.md` 寫），沒有把個人實驗或 POC 寫成企業正式上線。未複製企業內部素材，也未將未列在履歷中的 Email／LinkedIn 補成猜測值。
 
 付款專案與研究筆記目前刻意標示設計／待整理狀態。上線前必須按實際成果校對，不要把範例文案當作已完成的履歷。
 
