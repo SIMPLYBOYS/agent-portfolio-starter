@@ -97,6 +97,7 @@ cogito-agent 最初依履歷整理，後續已用公開 README、安全模型與
 
 - 卡片封面 `public/assets/payment-authority/town.jpg` 與 8 秒的 `town-preview.mp4`：城鎮全景，來自同一次拍攝；預覽的載入與暫停規則同 Pixel Office。
 - 詳情可選 90 秒精簡版或 3 分鐘完整版（`demo-90s.mp4`、`demo-180s.mp4`，保留原檔，沒有音軌），手動播放；海報取第 47 秒與第 142 秒。
+- 2026-11-19 依該專案的現況重拍主片（街景：書店招牌、建築連成一排、南側支路、店門口的桌椅與攤車、電話亭），六個檔案同名換新：封面取觀眾畫面第 6.5 秒、預覽從第 13.75 秒起 8 秒（960×540），海報同樣取第 47 秒與第 142 秒。
 - 影片各段自帶標示（示意動畫、Base Sepolia 實跑、模擬、Didit 沙盒）；作品說明與 `credits.html#payment-authority` 寫明哪些是自動產生的示意、哪些是測試網實錄，以及 eKYC 是沙盒。
 - 保留 LimeZu 署名；Didit 的頁面只作為「接了哪個沙盒」的說明，不代表合作。2026-11-13 專案以 MIT 公開在 <https://github.com/SIMPLYBOYS/agent-payment-authority>，作品卡補上 Source code 連結；沒有線上 Demo，Demo 連結仍然空白。
 - 2026-11-13 付款架構簡報放在 `public/slides/`，網址 `/slides/s/payment-architecture`，作品卡的「付款架構簡報」連過去。它是該專案 `slides/` 工作區（open-slide）只含這一份的靜態建置：`base` 設成 `/slides/`、關掉簡報清單（`build.showSlideBrowser: false`）與 HTML 下載；`public/slides/index.html` 只把人轉到這一份，`s/payment-architecture/index.html` 是同一個單頁程式的入口（這個站沒有 SPA fallback，所以放一份實體檔）。三個交易場景的逐步動畫要按 Present 才會分步。更新簡報時整個 `public/slides/` 換成新的建置。
