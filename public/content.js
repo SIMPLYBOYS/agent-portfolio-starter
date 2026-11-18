@@ -78,7 +78,7 @@ export const projects = [
     approach: 'Agent 只能提出請購；確定性的 Policy 裁決 Deny / Ask / Allow，超過自動範圍由本人用已登記的裝置（WebAuthn）核准，獨立的 Signer 只簽委託範圍內的商家與金額。客人的 BBS+ 憑證只揭露這間店要求的屬性（書店只看國家，便利商店只看是否滿 18 歲），身分來源接上 eKYC 廠商 Didit 的沙盒。付款走 x402 v2：Groth16 ZK 預算預留、EIP-3009 結算，經自架的 facilitator；Agent 在 ERC-8004 registry 有鏈上身分。展示放在一座像素城鎮裡的五個場域（書店、咖啡店、便利商店、飯店、郵局），失敗的情況也演出來：被誘導的 Agent、收款人被換掉、付了錢沒交付而退款、頻率上限、未成年買酒。',
     evidence: '2026/11 在 Base Sepolia 測試網實跑書店、咖啡店、便利商店三個場域，獨立的 checker 只讀證據包並向鏈重算，十項主張全部通過。飯店、郵局與退款目前只在本機測試鏈跑過，還沒上測試網。eKYC 接的是 Didit 的沙盒：流程是真的，沒有驗證真人。展示影片是標示清楚的示意動畫（fake Agent、本機測試鏈），加一段測試網的實錄。只用測試網與測試幣，沒有 mainnet、真實資金或真實商店；發行者、持有人與驗證者在同一個程序裡。程式碼已公開在 GitHub（MIT；像素素材因授權不在 repo 裡）；沒有線上 Demo，此頁播放的是預錄影片，不連接任何後端，也不執行付款。',
     decisions: ['Agent 不持付款私鑰；付款能力由另一個系統帳號裡的 Signer 管理。', '預算預留與付款結算分開追蹤，結果不明時先對帳。', 'eKYC 只接受廠商自動判定、帶證件資料的通過；發行者自己改出來的「通過」會被拒絕。', '限制照實寫出來；隱藏預算與完整授權證據鏈是探索重點，不宣稱技術首創。'],
-    demo: '', repo: 'https://github.com/SIMPLYBOYS/agent-payment-authority', caseStudy: '/slides/s/payment-architecture', caseStudyLabel: '付款架構簡報（21 頁）',
+    demo: '', repo: 'https://github.com/SIMPLYBOYS/agent-payment-authority', caseStudy: '/slides/s/payment-architecture', caseStudyLabel: '付款架構簡報（22 頁）',
   },
   {
     id: 'pixel-office', number: '09', category: 'experience',
